@@ -63,7 +63,7 @@ function resetTimer() {
   hourglassWrapper.classList.remove("active");
   hourglass.classList.remove("spin");
   hourglass.classList.remove("vibrate");
-  hourglass.style.backgroundImage = 'url("/img/hourglass_full.svg")';
+  hourglass.style.backgroundImage = 'url("./img/hourglass_full.svg")';
   updateTimer();
 }
 
@@ -82,7 +82,7 @@ function toggleTimer() {
         clearInterval(timerInterval);
         hourglass.classList.remove("spin");
         hourglass.classList.add("vibrate");
-        hourglass.style.backgroundImage = 'url("/img/alarm.svg")';
+        hourglass.style.backgroundImage = 'url("./img/alarm.svg")';
         playTempleBell();
         isRunning = false;
       } else {
